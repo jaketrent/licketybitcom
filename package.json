@@ -4,14 +4,15 @@
   "main": "index.js",
   "scripts": {
     "start": "node_modules/supervisor/lib/cli-wrapper.js --extensions 'node|js|coffee' --ignore app/static/ app/app.coffee",
-    "test": "node_modules/mocha/bin/mocha test/specs/**/*.spec.coffee --watch"
+    "test": "node_modules/mocha/bin/mocha test/specs/**/*.spec.coffee --watch",
+    "postinstall": "node_modules/bower/bin/bower install -f"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/jaketrent/node-webapp-seed.git"
   },
   "author": "",
-  "license": "MIT",
+  "license": "Copyright 2013 Lickety Bit",
   "readmeFilename": "README.md",
   "dependencies": {
     "express": "~3.2.6",
@@ -19,10 +20,10 @@
     "coffee-script": "~1.6.2",
     "stylus": "~0.32.1",
     "nib": "~0.9.1",
-    "bower": "~0.8.6",
     "underscore": "~1.4.4",
     "debug": "~0.7.2",
-    "mincer": "~0.4.6"
+    "mincer": "~0.4.6",
+    "bower": "~1.2.8"
   },
   "devDependencies": {
     "supervisor": "~0.5.2",
