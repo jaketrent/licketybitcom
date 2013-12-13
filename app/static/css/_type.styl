@@ -1,0 +1,136 @@
+html
+  font-size: 100%
++font-smoothing
++text-size-adjust
+
+html, body, button, input, select, textarea
+  font-family: $sans-font-family
+  font-size: $base-font-size
+  line-height: $base-line-height
+  color: $text-color
+
+::-moz-selection
+  background-color: $selection-color
+  text-shadow: none
+::selection
+  background-color: $selection-color
+  text-shadow: none
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+  font-weight: bold
+h1
+  font-size: 36px
+  line-height: ($base-line-height * 1.5)
+  margin-bottom: $base-line-height
+h2
+  font-size: 24px
+  line-height: $base-line-height
+  margin-bottom: $base-line-height
+h3
+  font-size: 18px
+  line-height: ($base-line-height * 1.5)
+  margin-bottom: ($base-line-height / 2)
+h4
+  font-size: 14px
+  line-height: $base-line-height
+h5
+  font-size: 12px
+  line-height: $base-line-height
+h6
+  font-size: 11px
+  line-height: $base-line-height
+
+p
+  margin: 0 0 $base-line-height
+  font-size: $base-font-size
+  line-height: $base-line-height
+  color: inherit
+
+ul, ol
+  margin: 0 0 $base-line-height 20px
+
+ul ul,
+ul ol,
+ol ol,
+ol ul
+  margin-bottom: 0
+
+ul
+  list-style: disc
+
+ol
+  list-style: decimal
+
+li
+  line-height: $base-line-height
+  color: inherit
+
+ul.unstyled
++reset-list
+
+a
+  color: $link-color
+  text-decoration: none
+  cursor: pointer
+
+a:hover
+  color: $link-color-hover
+  text-decoration: underline
+a:focus
+  outline: thin dotted
+a:hover, a:active
+  outline: 0
+
+hr
+  display: block
+  height: 1px
+  border: 0
+  border-top: 1px solid $border-color
+  margin: 1em 0
+  padding: 0
+strong
+  font-weight: bold
+em
+  font-style: italic
+  font-weight: inherit
+  line-height: inherit
+small
+  font-size: 75%
+pre, code
+  font-family: $mono-font-family
+  font-size: 1em
+  margin: 1em 0
+pre
+  white-space: pre
+  white-space: pre-wrap
+  word-wrap: break-word
+sub, sup
+  font-size: 75%
+  line-height: 0
+  position: relative
+  vertical-align: baseline
+sup
+  top: -0.5em
+sub
+  bottom: -0.25em
+blockquote
+  margin: 1em 40px
+q
+  quotes: none
+q:before, q:after
+  content: ''
+  content: none
+address
+  display: block
+  margin-bottom: $base-line-height
+  font-style: normal
+  line-height: $base-line-height
+img
+  border: 0
+  vertical-align: middle
+  -ms-interpolation-mode: bicubic
+svg:not(:root)
+  overflow: hidden
+figure
+  margin: 0
