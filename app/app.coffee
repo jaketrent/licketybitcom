@@ -2,6 +2,7 @@ express = require 'express'
 path = require 'path'
 
 routes = require './controllers/routes'
+env = require './middleware/env'
 
 app = express()
 
@@ -18,6 +19,7 @@ app.configure ->
 
   app.use express.static path.join __dirname, 'static'
   app.use '/static', require('./middleware/mincer').server
+  app.use env.setLocals
   app.use app.router
 
   app.use express.errorHandler()
