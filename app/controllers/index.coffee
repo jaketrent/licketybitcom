@@ -1,2 +1,2 @@
 exports.home = (req, res) ->
-  res.render 'home'
+  res.redirect '/waffles'
